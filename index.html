@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+      integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <title>Love Plushies</title>
+  </head>
+  <body>
+    <div id="authForm">
+      <div id="logoContainer">
+        <img id="logo" src="logo.png" alt="Logo">
+        <span id="logoText">My Plushies</span>
+      </div>
+      <h2>Sign Up or Sign In</h2>
+      <input type="email" placeholder="Email" id="userEmail" />
+      <input type="password" placeholder="Password" id="userPassword" />
+      <a id="forgotPassword" href="#">Forgot your password?</a>
+      <br /><br />
+      <button id="signUpButton">Sign Up</button>
+      <button id="signInButton">Sign In</button>
+    </div>
+
+    <div id="secretContent">
+      <div id="navbar">
+        <div>
+          <img id="navbarLogo" src="logo.png" alt="Navbar Logo" style="width: 30px; height: 30px;">
+          <a href="#" id="homeLink">Home</a>
+          <a href="#" id="contactsLink">Contacts</a>
+          <a href="#" id="productsLink">Products</a>
+        </div>
+        <a href="#" id="signOutButton">Sign Out</a>
+      </div>
+      
+      <section id="homeLink">
+        <div class="container">
+            <h2>Welcome to Love Plushies!</h2>
+            <p>Discover a world of adorable plush toys that will melt your heart. From cuddly kittens to huggable bears, we have the perfect companion for you or your loved ones. Start exploring our collection today!</p>
+        </div>
+    </section>
+
+      <div id="shopContent">
+
+        <div id="searchForm">
+          <input type="text" id="searchInput" placeholder="Search products...">
+          <button id="searchButton">Search</button>
+        </div>
+
+        <!-- Products Section -->
+        <div id="products" class="product-container">
+          <!-- Product 1 -->
+          <div id="product1" class="product">
+            <div class="product-info">
+              <h3>Sleepy Kitty Plush</h3>
+              <p>Price: ₱400</p>
+              <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-image">
+              <img src="images/sleep_kitty.webp" alt="Sleepy Kitty Plush">
+            </div>
+          </div>
+      
+          <!-- Product 2 -->
+          <div id="product2" class="product">
+            <div class="product-info">
+              <h3>Classic Kitty Plush</h3>
+              <p>Price: ₱350</p>
+              <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-image">
+              <img src="images/classic_kitty.webp" alt="Classic Kitty Plush">
+            </div>
+          </div>
+      
+          <!-- Product 3 -->
+          <div id="product2" class="product">
+            <div class="product-info">
+              <h3>Blue Cream Kitty Plush</h3>
+              <p>Price: ₱450</p>
+              <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-image">
+              <img src="images/bluecream_kitty.webp" alt="Blue Cream Kitty Plush">
+            </div>
+          </div>
+      
+          <!-- Product 4 -->
+          <div id="product4" class="product">
+            <div class="product-info">
+              <h3>Ice Kitty Plush</h3>
+              <p>Price: ₱300</p>
+              <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-image">
+              <img src="images/ice_kitty.webp" alt="Ice Kitty Plush">
+            </div>
+          </div>
+      
+          <!-- Product 5 -->
+          <div id="product5" class="product">
+            <div class="product-info">
+              <h3>Sakura Kitty Plush</h3>
+              <p>Price: ₱380</p>
+              <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-image">
+              <img src="images/sakura_kitty.webp" alt="Sakura Kitty Plush">
+            </div>
+          </div>
+      
+          <!-- Product 6 -->
+          <div id="product6" class="product">
+            <div class="product-info">
+              <h3>Care Kitty Plush</h3>
+              <p>Price: ₱420</p>
+              <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-image">
+              <img src="images/care_kitty.webp" alt="Care Kitty Plush">
+            </div>
+          </div>
+      
+          <!-- Product 7 -->
+          <div id="product7" class="product">
+            <div class="product-info">
+              <h3>Pink Kitty Plush</h3>
+              <p>Price: ₱380</p>
+              <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-image">
+              <img src="images/pink_kitty.webp" alt="Pink Kitty Plush">
+            </div>
+          </div>
+      
+          <!-- Product 8 -->
+          <div id="product8" class="product">
+            <div class="product-info">
+              <h3>Baby Kitty Plush</h3>
+              <p>Price: ₱350</p>
+              <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-image">
+              <img src="images/baby_kitty.webp" alt="Baby Kitty Plush">
+            </div>
+          </div>
+          
+<!-- contacts -->
+          <section id="contactsLink">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-details">
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: contact@loveplushies.com</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <span>Phone: +1234567890</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Address: 123 Plushie Love Street, Cute City</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        </div>
+      </div>
+      
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+      import {
+        getAuth,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+        onAuthStateChanged,
+        signOut,
+        sendPasswordResetEmail,
+      } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+
+      // Your Firebase config object
+      const firebaseConfig = {
+        apiKey: "AIzaSyDTy9_x0QahA2Nj-I3owXWB1p3x3oQBG-M",
+        authDomain: "authen01-906a5.firebaseapp.com",
+        projectId: "authen01-906a5",
+        storageBucket: "authen01-906a5.appspot.com",
+        messagingSenderId: "665516914068",
+        appId: "1:665516914068:web:b242622c27ea302f8e8b81"
+      };
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+
+      const userEmail = document.querySelector("#userEmail");
+      const userPassword = document.querySelector("#userPassword");
+      const authForm = document.querySelector("#authForm");
+      const secretContent = document.querySelector("#secretContent");
+      const signUpButton = document.querySelector("#signUpButton");
+      const signInButton = document.querySelector("#signInButton");
+      const signOutButton = document.querySelector("#signOutButton");
+      const forgotPassword = document.querySelector("#forgotPassword");
+      const productsLink = document.querySelector("#productsLink");
+      const shopContent = document.querySelector("#shopContent");
+      const homeLink = document.querySelector("#homeLink");
+      const contactsLink = document.querySelector("#contactsLink");
+      const addToCartLink = document.querySelector("#addToCartLink");
+      const searchLink = document.querySelector("#searchLink");
+
+      secretContent.style.display = "none";
+
+      const userSignUp = async () => {
+        const signUpEmail = userEmail.value;
+        const signUpPassword = userPassword.value;
+        createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            console.log(user);
+            Swal.fire("Your account has been successfully created!");
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode + errorMessage);
+          });
+      };
+
+      const userSignIn = async () => {
+        const signInEmail = userEmail.value;
+        const signInPassword = userPassword.value;
+        signInWithEmailAndPassword(auth, signInEmail, signInPassword)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            Swal.fire("You have signed in successfully!");
+            // Redirect to the ecommerce page after signing in
+            authForm.style.display = "none";
+            secretContent.style.display = "block";
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode + errorMessage);
+          });
+      };
+
+      const resetPassword = async () => {
+        const email = userEmail.value;
+        if (email) {
+          sendPasswordResetEmail(auth, email)
+            .then(() => {
+              Swal.fire("Password reset email sent!");
+            })
+            .catch((error) => {
+              const errorCode = error.code;
+              const errorMessage = error.message;
+              console.log(errorCode + errorMessage);
+            });
+        } else {
+          Swal.fire("Please enter your email address.");
+        }
+      };
+
+      const checkAuthState = async () => {
+        onAuthStateChanged(auth, (user) => {
+          if (user) {
+            authForm.style.display = "none";
+            secretContent.style.display = "block";
+          } else {
+            authForm.style.display = "block";
+            secretContent.style.display = "none";
+          }
+        });
+      };
+
+      const userSignOut = async () => {
+        await signOut(auth);
+        Swal.fire("User Logout");
+      };
+
+      checkAuthState();
+
+      signUpButton.addEventListener("click", userSignUp);
+      signInButton.addEventListener("click", userSignIn);
+      signOutButton.addEventListener("click", userSignOut);
+      forgotPassword.addEventListener("click", resetPassword);
+
+      // Navigation links functionality
+      homeLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        // Implement redirection or action for Home link
+      });
+
+      contactsLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        // Implement redirection or action for Contacts link
+      });
+
+      addToCartLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        // Implement redirection or action for Add to Cart link
+      });
+
+      productsLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        shopContent.scrollIntoView({ behavior: "smooth" });
+      });
+
+      searchLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        // Implement redirection or action for Search link
+      });
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script type="module">
+  // Firebase imports...
+
+  const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
+
+  addToCartButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      // Show SweetAlert
+      Swal.fire({
+        icon: 'success',
+        title: 'Added to Cart!',
+        showConfirmButton: false,
+        timer: 1500
+      });
+    });
+  });
+
+  // Other JavaScript code...
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+  </body>
+</html>
